@@ -27,7 +27,7 @@ const PoliceSignUp = () => {
         e.preventDefault();
         const { name, email, serviceNumber, rank, password, cpassword } = pdata
         console.log(pdata)
-        const res = await fetch("http://localhost:8000/api/police/register", {
+        const res = await fetch("https://crime-data-management-api.vercel.app/api/police/register", {
             method: "POST",
             headers: {
                 "content-Type": "application/json"

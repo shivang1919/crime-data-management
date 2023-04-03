@@ -27,7 +27,7 @@ export default function PoliceLogin() {
         e.preventDefault();
         console.log("I am here")
         const { email, password, serviceNumber } = logdata;
-        const res = await fetch("http://localhost:8000/api/police/login", {
+        const res = await fetch("https://crime-data-management-api.vercel.app/api/police/login", {
             method: "POST",
             headers: {
                 "content-Type": "application/json",
