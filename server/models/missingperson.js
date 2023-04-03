@@ -15,6 +15,17 @@ const MissingpersonSchema = new mongoose.Schema(
             max:50,
             required:true
         },
+        aadhar: {
+            type: String,
+            required: true,
+            maxlength: 12,
+            unique:true
+        },
+        description: {
+            type: String,
+            max:200,
+            required: true
+        },
         personreporting: {
             type: String,
             required: true,
