@@ -178,7 +178,7 @@ const userOTP=asyncHandler(async(req,res)=>{
                     } else {
                         await User.updateOne({ email},{verified:true});
                         await UserOtpVerification.deleteMany({ email });
-                        res.json({
+                        res.status(201).json({
                             status: "verified",
                             message: "user email verified successfully",
                         });
@@ -189,7 +189,7 @@ const userOTP=asyncHandler(async(req,res)=>{
 
     }catch(err){
        
-        res.json({
+        res.status(400).json({
             status:"Failed",
             message:err.message,
         });
@@ -210,7 +210,7 @@ const resendUserOTP=asyncHandler(async(req,res)=>{
             sendOTPVerificationEmail({id,email},res);
         }
     }catch(err){
-        res.json({
+        res.status(400).json({
             status:"Failed",
             message:err.message,
         });
