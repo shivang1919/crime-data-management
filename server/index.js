@@ -9,7 +9,7 @@ const userRoutes = require("./routes/userRoutes")
 const policeRoutes = require("./routes/policeRoutes")
 dotenv.config();
 app.use(cors({
-    "origin": ["http://localhost:3000", 'https://crime-data-management.vercel.app'],
+    "origin": ["http://localhost:3000", 'https://crime-data-management.vercel.app','https://crime-data-management-api.vercel.app'],
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
 }))
