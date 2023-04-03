@@ -5,6 +5,7 @@ import Userlogin from './components/Loginpages/Userlogin';
 import Policelogin from './components/Loginpages/PoliceLogin';
 import UserSignUp from './components/Signuppages/UserSignUp';
 import PoliceSignUp from './components/Signuppages/PoliceSignUp';
+import VerifyOtpUser from './components/verifyotppage/VerifyOtpUser';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -16,9 +17,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Frontpage/>}/>
           <Route path='/users/login' element={<Userlogin/>}/>
-          {/* <Route path='/users/login/users/register' element={<UserSignUp/>}/> */}
-          {/* <Route path='/police/login' element={<PoliceLogin/>}/> */}
-          {/* <Route path='/police/login/police/register' element={<PoliceSignUp/>}/> */}
+          <Route path='/users/login/users/register' element={<UserSignUp/>}/>
+          <Route path='/police/login' element={<Policelogin/>}/>
+          <Route path='/police/login/police/register' element={<PoliceSignUp/>}/>
+          <Route path='/users/login/verifyOtp' element={<VerifyOtpUser/>}/>
         </Routes>
       </Router>
     </div>

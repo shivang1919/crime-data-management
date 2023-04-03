@@ -50,7 +50,7 @@ export default function Userlogin() {
                 position: "top-center"
             })
             setdata({ ...logdata, email: "", password: "" });
-            navigate("/")
+            navigate("/users/login/verifyOtp");
         }
 
 
