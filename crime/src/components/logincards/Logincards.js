@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 function Logincards(){
 
     return(
-        <div className='Cardbox'>
+        <div className='Cardbox backdrop-blur-sm'>
         <div className='Card mr-8'>
             <div className='upper-container'>
                 <div className='image-container'>
