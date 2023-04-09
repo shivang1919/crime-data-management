@@ -61,7 +61,7 @@ export default function Userlogin() {
 
 
             <div className='flex justify-center items-center h-full'>
-                <form className='max-w-[400px] w-full mx-auto bg-white p-8'>
+                <form className='max-w-[500px] w-full mx-auto bg-white p-8'>
                     <h2 className='text-4xl font-bold text-center py-4'>User OTP Verification</h2>
                     <div className='flex flex-col mb-4'>
                         <label>Email</label>
@@ -72,7 +72,7 @@ export default function Userlogin() {
                         <input className='border relative bg-gray-100 p-2' placeholder='OTP' type="text" onChange={adddata} value={logdata.otp} name="otp" />
                     </div>
                     <button className='w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white' onClick={senddata}>Verify</button>
-                    <NavLink to="/users/login/verifyOtp">
+                    <NavLink to="/signin/users/login/verifyOtp">
                     <button className='w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white'>Resend OTP</button>
                     </NavLink>
                 </form>
