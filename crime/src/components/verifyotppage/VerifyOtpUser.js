@@ -26,7 +26,7 @@ export default function Userlogin() {
         e.preventDefault();
         console.log("I am here and verify otp")
         const { email, otp } = logdata;
-        const res = await fetch("http://localhost:8000/api/users/verifyOtp", {
+        const res = await fetch("https://crime-data-management-api.vercel.app/api/users/verifyOtp", {
             method: "POST",
             headers: {
                 "content-Type": "application/json",

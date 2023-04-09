@@ -26,7 +26,7 @@ const UserSignUp = () => {
         e.preventDefault();
         const { name, email, aadhar,password, cpassword } = udata
         console.log(udata)
-        const res = await fetch("http://localhost:8000/api/users/register", {
+        const res = await fetch("https://crime-data-management-api.vercel.app/api/users/register", {
             method: "POST",
             headers: {
                 "content-Type": "application/json"
