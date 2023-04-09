@@ -63,7 +63,7 @@ export default function PoliceLogin() {
 
             <div className='flex justify-center items-center h-full'>
                 <form className='max-w-[400px] w-full mx-auto bg-white p-8'>
-                    <h2 className='text-4xl font-bold text-center py-4'>BRAND.</h2>
+                    <h2 className='text-4xl font-bold text-center py-4'>POLICE LOGIN</h2>
                     <div className='flex flex-col mb-4'>
                         <label>Email</label>
                         <input className='border relative bg-gray-100 p-2' placeholder='Email' type="email" onChange={adddata} value={logdata.email} name="email" />
@@ -78,7 +78,7 @@ export default function PoliceLogin() {
                     </div>
                     <button className='w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white' onClick={senddata}>Login</button>
                     <p className='text-center mt-8'>Dont't have an account? Sign up now</p>
-                    <NavLink to="/police/login/police/register">
+                    <NavLink to="/signin/police/login/police/register">
                     <button className='w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white'>Sign Up</button>
                     </NavLink>
                 </form>

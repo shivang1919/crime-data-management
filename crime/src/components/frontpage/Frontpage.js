@@ -1,13 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 export default function Frontpage() {
 
     return (
 
         // <div className="bg-right bg-no-repeat font-sans relative flex flex-col justify-center min-h-screen overflow-hidden h-full w-full bg-gray-400  backdrop-filter backdrop-blur-sm bg-opacity-5 ">
         <div className="frontPos bg-right bg-no-repeat font-sans relative flex flex-col justify-center min-h-screen overflow-hidden h-full w-full bg-gray-400  backdrop-filter bg-opacity-5">
-            <h1 className="h1Pos text-right text-7xl tracking-wider font-semibold font-serif text-red-600 mr-20 mb-70 ">
-            
+            {/* <h1 className="h1Pos text-right text-7xl tracking-wider font-semibold font-serif text-red-600 mr-20 mb-70 ">
+
             </h1>
             <div class="float-parent-element">
                 <div class="float-child-element1">
@@ -20,7 +20,7 @@ export default function Frontpage() {
                                 <span className="text-red-600">Emergency </span>Service
                             </p>
                             <p className="pFont fixed text-2xl tracking-wider font-semibold text-center text-white mt-72 ml-20">
-                                Now get your ambulance at<br></br> your footstep.
+                                <br></br>
                             </p>
                             <div className="  btnStyle align-bottom flex justify-end items-left content-start mb-64 mr-32 pt-12">
                                 <NavLink to="users/login/">
@@ -45,7 +45,7 @@ export default function Frontpage() {
                         <img className="imgSize w-80 h-70" src="" alt="" />
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

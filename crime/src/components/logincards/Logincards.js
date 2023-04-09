@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Logincards(){
 
@@ -12,7 +13,9 @@ function Logincards(){
             </div>
             <div className='lower-container'>
                 <h3>USER</h3>
+                <NavLink to="users/login/">
                 <button className='cardbtn'>User Login</button>
+                </NavLink>
             </div>
         </div>
         <div className='Card'>
@@ -23,7 +26,9 @@ function Logincards(){
             </div>
             <div className='lower-container'>
                 <h3>POLICE</h3>
+                <NavLink to="police/login/">
                 <button className='cardbtn'>Police Login</button>
+                </NavLink>
             </div>
         </div>
         </div>
