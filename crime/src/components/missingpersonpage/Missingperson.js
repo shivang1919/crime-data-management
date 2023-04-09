@@ -62,12 +62,12 @@ export default function Missingperson() {
 
     }
     return (
-        <div className='relative w-full h-screen bg-zinc-900/90'>
+        <div className='relative w-full h-full backdrop-blur-sm'>
             {/* <img className='absolute w-full h-full object-cover mix-blend-overlay' src="" alt="/" /> */}
 
 
             <div className='flex justify-center items-center h-full '>
-                <form className='max-w-[600px] w-full max-h-[900px] mx-auto bg-white p-8 mt-40'>
+                <form className='max-w-[600px] w-full max-h-[900px] mx-auto bg-white p-8 mt-8 mb-8'>
                     <h2 className='text-4xl font-bold text-center py-4'>MISSING PERSON BUREAU</h2>
                     <div className='flex flex-col mb-2'>
                         <label>Name</label>

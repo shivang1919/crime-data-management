@@ -53,12 +53,12 @@ const PoliceSignUp = () => {
 
     }
     return (
-        <div className='relative w-full h-screen bg-zinc-900/90'>
-            <img className='absolute w-full h-full object-cover mix-blend-overlay' src="" alt="/" />
+        <div className='relative w-full h-screen backdrop-blur-sm'>
+            {/* <img className='absolute w-full h-full object-cover mix-blend-overlay' src="" alt="/" /> */}
 
 
             <div className='flex justify-center items-center h-full'>
-                <form className='max-w-[500px] w-full mx-auto bg-white p-8'>
+            <form className='max-w-[600px] w-full max-h-[900px] mx-auto bg-white p-8 mt-8 mb-8'>
                     <h2 className='text-4xl font-bold text-center py-4'>POLICE SIGN UP</h2>
                     <div className='flex flex-col mb-4'>
                         <label>Name</label>
