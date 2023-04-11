@@ -59,7 +59,7 @@ const FirSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        DirectionAndDistncefromPS:{
+        DirectionAndDistancefromPS:{
             type: String,
             required: true,
         },
@@ -115,7 +115,7 @@ const FirSchema = new mongoose.Schema(
         },
         ReasonsforDelay: {
             type: String,
-            required: true,
+            // required: true,
         },
         ParticularsOfPropertiesStolenInvolved: {
             type: String,
