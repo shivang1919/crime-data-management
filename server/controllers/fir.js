@@ -36,7 +36,7 @@ const registerFir = asyncHandler(async(req,res)=>{
             ComplainantNationality: newFir.ComplainantNationality,
             ComplainantOccupation: newFir.ComplainantOccupation,
             ComplainantPassportNo: newFir.ComplainantPassportNo,
-            ComplainantDateofIssue: newFir.ComplainantDateOfIssue,
+            ComplainantDateofIssue: newFir.ComplainantDateofIssue,
             ComplainantPlaceOfIssue: newFir.ComplainantPlaceOfIssue,
             ComplainantAddress: newFir.ComplainantAddress,
             DetailsOfSuspected: newFir.DetailsOfSuspected,

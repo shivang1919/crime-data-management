@@ -8,7 +8,9 @@ import PoliceSignUp from './components/Signuppages/PoliceSignUp';
 import VerifyOtpUser from './components/verifyotppage/VerifyOtpUser';
 import Logincards from './components/logincards/Logincards';
 import Missingperson from './components/missingpersonpage/Missingperson';
+import Firpage from './components/firpage/Firpage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
           <Route path='/signin/users/login/verifyOtp' element={<VerifyOtpUser/>}/>
           <Route path='/signin' element={<Logincards/>}/>
           <Route path='/missingpersonbureau' element={<Missingperson/>}/>
+          <Route path='/fir' element={<Firpage/>}/>
         </Routes>
       </Router>
     </div>
