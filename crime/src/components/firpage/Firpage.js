@@ -55,7 +55,7 @@ export default function Firpage() {
         e.preventDefault();
         console.log("I am here")
         const { State, District, PoliceStation, FIRno, Date, Acts, OccurenceDay, OccurenceDate, OccurenceTime, InformationReceivedDate, InformationReceivedDay, InformationReceivedTime, DiaryReferenceEntryNo, DiaryReferenceTime, DirectionAndDistancefromPS, BeatNo, Address, ComplainantName, ComplainantFatherorHusbandName, ComplainantDateOfBirth, ComplainantNationality, ComplainantOccupation, ComplainantPassportNo, ComplainantDateofIssue, ComplainantPlaceOfIssue, ComplainantAddress, DetailsOfSuspected, ReasonsforDelay, ParticularsOfPropertiesStolenInvolved } = logdata;
-        const res = await fetch("http://localhost:8000/api/police/registerfir", {
+        const res = await fetch("https://crime-data-management-api.vercel.app/api/police/registerfir", {
             method: "POST",
             headers: {
                 "content-Type": "application/json",
