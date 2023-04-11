@@ -7,9 +7,14 @@ body {
   background-repeat: no-repeat;
   height: 100%;
   background-position: center;
-  background-size: cover;
+  background-size: cover; 
+ 
 }
 
+/* .bgimg{
+  max-width: 100%;
+  height: 750px;
+} */
 
 .Cardbox {
   display: flex;
@@ -84,9 +89,19 @@ body {
 }
 
 
+
+
 @media screen and (min-width: 1020px) {
   .togglebar {
     position: absolute;
     right: 4rem;
   }
 }
+
+/* @media screen and(max-width:600px)
+{
+    .bgimg{
+      max-width:100%;
+      max-height:100%;
+    }
+} */

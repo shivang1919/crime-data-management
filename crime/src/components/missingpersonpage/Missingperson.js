@@ -91,7 +91,7 @@ export default function Missingperson() {
 
                     <div className='flex flex-col mb-2'>
                         <label>Description</label>
-                        <input className='border relative bg-gray-100 p-2' placeholder='Description' type="text" onChange={adddata} value={logdata.description} name="description" />
+                        <textarea className='border relative bg-gray-100 p-2' rows="3" placeholder='Description' type="text" onChange={adddata} value={logdata.description} name="description" />
                     </div>
 
                     <div className='flex flex-col mb-2'>
