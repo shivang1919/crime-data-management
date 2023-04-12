@@ -1,20 +1,20 @@
 const asyncHandler = require('express-async-handler')
 const Fir = require("../models/fir")
 
-const registerFir = asyncHandler(async(req,res)=>{
-    const {State,District,PoliceStation,FIRno,Date,Acts,OccurenceDay,OccurenceDate,OccurenceTime,InformationReceivedDate,InformationReceivedDay,InformationReceivedTime,DiaryReferenceEntryNo,DiaryReferenceTime,DirectionAndDistancefromPS,BeatNo,Address,ComplainantName,ComplainantFatherorHusbandName,ComplainantDateOfBirth,ComplainantNationality,ComplainantOccupation,ComplainantPassportNo,ComplainantDateofIssue,ComplainantPlaceOfIssue,ComplainantAddress,DetailsOfSuspected,ReasonsforDelay,ParticularsOfPropertiesStolenInvolved} = req.body
-    if( !State || !District || !PoliceStation || !FIRno || !Date || !Acts || !OccurenceDay || !OccurenceDate || !OccurenceTime || !InformationReceivedDate || !InformationReceivedDay || !InformationReceivedTime || !DiaryReferenceEntryNo || !DiaryReferenceTime || !DirectionAndDistancefromPS || !BeatNo || !Address || !ComplainantName || !ComplainantFatherorHusbandName || !ComplainantDateOfBirth || !ComplainantNationality || !ComplainantOccupation || !ComplainantDateofIssue || !ComplainantPlaceOfIssue || !ComplainantAddress || !DetailsOfSuspected || !ParticularsOfPropertiesStolenInvolved){
-        res.status(400).json({"error":"Please fill all the fields"});
+const registerFir = asyncHandler(async (req, res) => {
+    const { State, District, PoliceStation, FIRno, Date, Acts, OccurenceDay, OccurenceDate, OccurenceTime, InformationReceivedDate, InformationReceivedDay, InformationReceivedTime, DiaryReferenceEntryNo, DiaryReferenceTime, DirectionAndDistancefromPS, BeatNo, Address, ComplainantName, ComplainantFatherorHusbandName, ComplainantDateOfBirth, ComplainantNationality, ComplainantOccupation, ComplainantPassportNo, ComplainantDateofIssue, ComplainantPlaceOfIssue, ComplainantAddress, DetailsOfSuspected, ReasonsforDelay, ParticularsOfPropertiesStolenInvolved } = req.body
+    if (!State || !District || !PoliceStation || !FIRno || !Date || !Acts || !OccurenceDay || !OccurenceDate || !OccurenceTime || !InformationReceivedDate || !InformationReceivedDay || !InformationReceivedTime || !DiaryReferenceEntryNo || !DiaryReferenceTime || !DirectionAndDistancefromPS || !BeatNo || !Address || !ComplainantName || !ComplainantFatherorHusbandName || !ComplainantDateOfBirth || !ComplainantNationality || !ComplainantOccupation || !ComplainantDateofIssue || !ComplainantPlaceOfIssue || !ComplainantAddress || !DetailsOfSuspected || !ParticularsOfPropertiesStolenInvolved) {
+        res.status(400).json({ "error": "Please fill all the fields" });
         return;
     }
     const newFir = await Fir({
-        State,District,PoliceStation,FIRno,Date,Acts,OccurenceDay,OccurenceDate,OccurenceTime,InformationReceivedDate,InformationReceivedDay,InformationReceivedTime,DiaryReferenceEntryNo,DiaryReferenceTime,DirectionAndDistancefromPS,BeatNo,Address,ComplainantName,ComplainantFatherorHusbandName,ComplainantDateOfBirth,ComplainantNationality,ComplainantOccupation,ComplainantPassportNo,ComplainantDateofIssue,ComplainantPlaceOfIssue,ComplainantAddress,DetailsOfSuspected,ReasonsforDelay,ParticularsOfPropertiesStolenInvolved
+        State, District, PoliceStation, FIRno, Date, Acts, OccurenceDay, OccurenceDate, OccurenceTime, InformationReceivedDate, InformationReceivedDay, InformationReceivedTime, DiaryReferenceEntryNo, DiaryReferenceTime, DirectionAndDistancefromPS, BeatNo, Address, ComplainantName, ComplainantFatherorHusbandName, ComplainantDateOfBirth, ComplainantNationality, ComplainantOccupation, ComplainantPassportNo, ComplainantDateofIssue, ComplainantPlaceOfIssue, ComplainantAddress, DetailsOfSuspected, ReasonsforDelay, ParticularsOfPropertiesStolenInvolved
     })
     const result = newFir.save()
-    if(result){
+    if (result) {
         res.status(201).json({
-            State:newFir.State,
-            District:newFir.District,
+            State: newFir.State,
+            District: newFir.District,
             PoliceStation: newFir.PoliceStation,
             FIRno: newFir.FIRno,
             Date: newFir.Date,
@@ -36,7 +36,7 @@ const registerFir = asyncHandler(async(req,res)=>{
             ComplainantNationality: newFir.ComplainantNationality,
             ComplainantOccupation: newFir.ComplainantOccupation,
             ComplainantPassportNo: newFir.ComplainantPassportNo,
-            ComplainantDateofIssue: newFir.ComplainantDateofIssue,
+            ComplainantDateofIssue:newFir.ComplainantDateofIssue,
             ComplainantPlaceOfIssue: newFir.ComplainantPlaceOfIssue,
             ComplainantAddress: newFir.ComplainantAddress,
             DetailsOfSuspected: newFir.DetailsOfSuspected,
@@ -44,8 +44,8 @@ const registerFir = asyncHandler(async(req,res)=>{
             ParticularsOfPropertiesStolenInvolved: newFir.ParticularsOfPropertiesStolenInvolved
         })
     }
-    else{
-        res.status(400).json({"error": "Failed to create FIR"})
+    else {
+        res.status(400).json({ "error": "Failed to create FIR" })
     }
 })
-module.exports = {registerFir}
+module.exports = { registerFir }
