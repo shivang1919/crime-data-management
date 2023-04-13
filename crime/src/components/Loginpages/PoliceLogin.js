@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NavbarPRMS from '../NavbarPRMS';
 
 
 export default function PoliceLogin() {
@@ -51,13 +52,14 @@ export default function PoliceLogin() {
                 position: "top-center"
             })
             setdata({ ...logdata, email: "", password: "", serviceNumber:"" });
-            navigate("/");
+            navigate("/signin/police/login/policepage");
         }
 
 
     }
     return (
         <div className='relative w-full h-screen backdrop-blur-sm'>
+        <NavbarPRMS/>
             {/* <img className='absolute w-full h-full object-cover mix-blend-overlay' src="" alt="/" /> */}
 
 

@@ -199,7 +199,7 @@ const userOTP=asyncHandler(async(req,res)=>{
 
 const resendUserOTP=asyncHandler(async(req,res)=>{
     try{
-        let {email}=req.body;
+        const {email}=req.body;
         const useremail = await User.findOne({ email: email });
         const id=useremail.id;
         

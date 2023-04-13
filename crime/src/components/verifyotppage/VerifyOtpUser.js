@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NavbarPRMS from '../NavbarPRMS';
 
 
 export default function Userlogin() {
@@ -50,7 +51,7 @@ export default function Userlogin() {
                 position: "top-center"
             })
             setdata({ ...logdata, email: "", otp: "" });
-            navigate("/")
+            navigate("/signin/users/login/verifyOtp/userspage")
         }
 
 
@@ -58,6 +59,7 @@ export default function Userlogin() {
     return (
         <div className='relative w-full h-screen backdrop-blur-sm'>
             {/* <img className='absolute w-full h-full object-cover mix-blend-overlay' src="" alt="/" /> */}
+            <NavbarPRMS/>
 
 
             <div className='flex justify-center items-center h-full'>

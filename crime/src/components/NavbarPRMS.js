@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Navbar = () => {
+const NavbarPRMS = () => {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
@@ -31,9 +31,9 @@ const Navbar = () => {
             Missing Person Bureau
           </a> */}
 
-          <a href="/signin" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
+          {/* <a href="/signin" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
             Sign In
-          </a>
+          </a> */}
         </div>
       </div>
     </nav>
@@ -41,4 +41,4 @@ const Navbar = () => {
 }
 
 
-export default Navbar;
+export default NavbarPRMS;

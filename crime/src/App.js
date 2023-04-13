@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import Frontpage from './components/frontpage/Frontpage';
 import Userlogin from './components/Loginpages/Userlogin';
 import Policelogin from './components/Loginpages/PoliceLogin';
@@ -9,6 +9,8 @@ import VerifyOtpUser from './components/verifyotppage/VerifyOtpUser';
 import Logincards from './components/logincards/Logincards';
 import Missingperson from './components/missingpersonpage/Missingperson';
 import Firpage from './components/firpage/Firpage';
+import Userpage from './components/userpage/Userpage';
+import Policepage from './components/policepage/Policepage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -17,7 +19,7 @@ function App() {
 
   return (
     <div >
-      <Navbar/> 
+      {/* <Navbar/>  */}
       <Router>
         <Routes>
           <Route path='/' element={<Frontpage/>}/>
@@ -27,8 +29,10 @@ function App() {
           <Route path='/signin/police/login/police/register' element={<PoliceSignUp/>}/>
           <Route path='/signin/users/login/verifyOtp' element={<VerifyOtpUser/>}/>
           <Route path='/signin' element={<Logincards/>}/>
-          <Route path='/missingpersonbureau' element={<Missingperson/>}/>
-          <Route path='/fir' element={<Firpage/>}/>
+          <Route path='/signin/police/login/missingpersonbureau' element={<Missingperson/>}/>
+          <Route path='/signin/police/login/fir' element={<Firpage/>}/>
+          <Route path='/signin/users/login/verifyOtp/userspage' element={<Userpage/>}/>
+          <Route path='/signin/police/login/policepage' element={<Policepage/>}/>
         </Routes>
       </Router>
     </div>
