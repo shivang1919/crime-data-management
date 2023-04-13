@@ -1,10 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import NavbarPRMS from '../NavbarPRMS';
 
 function Logincards(){
 
     return(
+        <div>
+        <NavbarPRMS/>
         <div className='Cardbox backdrop-blur-sm'>
+        
         <div className='Card mr-8'>
             <div className='upper-container'>
                 <div className='image-container'>
@@ -30,6 +34,7 @@ function Logincards(){
                 <button className='cardbtn'>Police Login</button>
                 </NavLink>
             </div>
+        </div>
         </div>
         </div>
     )

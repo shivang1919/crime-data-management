@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Navbar = () => {
+const NavbarUser = () => {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
@@ -20,19 +20,19 @@ const Navbar = () => {
       <div className={`${isExpanded ? `block  togglebar` : `hidden absolute right-16`
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto `}>
         <div className="text-lg font-semibold lg:flex-grow ">
-          {/* <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447] mr-5">
+          <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447] mr-5">
             Report Crime
           </a>
-          <a href="/fir" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
+          <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
             F.I.R.
           </a>
 
-          <a href="/missingpersonbureau" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
+          <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
             Missing Person Bureau
-          </a> */}
+          </a>
 
-          <a href="/signin" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
-            Sign In
+          <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
+            Logout
           </a>
         </div>
       </div>
@@ -41,4 +41,4 @@ const Navbar = () => {
 }
 
 
-export default Navbar;
+export default NavbarUser;

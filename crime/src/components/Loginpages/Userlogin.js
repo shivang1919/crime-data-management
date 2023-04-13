@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NavbarPRMS from '../NavbarPRMS';
 
 
 export default function Userlogin() {
@@ -58,7 +59,7 @@ export default function Userlogin() {
     return (
         <div className='relative w-full h-screen backdrop-blur-sm'>
             {/* <img className='absolute w-full h-full object-cover mix-blend-overlay' src="" alt="/" /> */}
-
+            <NavbarPRMS/>
 
             <div className='flex justify-center items-center h-full'>
             <form className='max-w-[500px] w-full max-h-[900px] mx-auto bg-white p-8 mt-8 mb-8'>
@@ -74,7 +75,7 @@ export default function Userlogin() {
                     <button className='w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white' onClick={senddata}>Login</button>
                     <p className='text-center mt-8'>Not a member? Sign up now</p>
                     <NavLink to="/signin/users/login/users/register">
-                    <button className='w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white'>Sign Up</button>
+                    <button className='w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white '>Sign Up</button>
                     </NavLink>
                 </form>
             </div>

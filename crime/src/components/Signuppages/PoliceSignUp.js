@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {  useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NavbarPRMS from '../NavbarPRMS';
 
 const PoliceSignUp = () => {
     const navigate = useNavigate();
@@ -48,13 +49,14 @@ const PoliceSignUp = () => {
                 postition: "top-center"
             })
             sdata({ ...pdata, name: "", email: "", serviceNumber:"", rank:"", password: "", cpassword: ""});
-            navigate("/")
+            navigate("/signin/police/login")
         }
 
     }
     return (
         <div className='relative w-full h-screen backdrop-blur-sm'>
             {/* <img className='absolute w-full h-full object-cover mix-blend-overlay' src="" alt="/" /> */}
+            <NavbarPRMS/>
 
 
             <div className='flex justify-center items-center h-full'>
