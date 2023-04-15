@@ -26,4 +26,22 @@ const registerMissingperson = asyncHandler(async(req,res)=>{
         res.status(400).json({ "error": "Failed to create missing person" });
     }
 })
-module.exports = {registerMissingperson}
+const getAllMissingPerson = async(req,res) => {
+    const {name,age,place,description} = req.query
+    const queryObject = {};
+    if(name){
+        queryObject.name = name;
+    }
+    if(age){
+        queryObject.age = age;
+    }
+    if(place){
+        queryObject.place = place;
+    }
+    if(description){
+        queryObject.description = description
+    }
+    const myMissingPerson = await Missingperson.find(queryObject)
+    res.status(200).json({myMissingPerson})
+}
+module.exports = {registerMissingperson,getAllMissingPerson}

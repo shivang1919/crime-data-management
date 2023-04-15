@@ -120,7 +120,7 @@ const FirSchema = new mongoose.Schema(
         ParticularsOfPropertiesStolenInvolved: {
             type: String,
             required: true,
-        }
+        },
     },
     {
         timestamps: true,
