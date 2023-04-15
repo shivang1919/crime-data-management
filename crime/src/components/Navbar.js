@@ -6,7 +6,8 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-[#ff9c1bfe] p-6 border-solid border-b-4 border-white sticky top-0 z-50">
       <div className=" items-center flex-shrink-0 text-white mr-6 text-3xl font-bold">
-        <h2>PRMS</h2>
+        {/* <h2>PRMS</h2> */}
+        <a href="/">PRMS</a>
 
       </div>
       <div className="block lg:hidden">
