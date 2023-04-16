@@ -52,8 +52,12 @@ const registerFir = asyncHandler(async (req, res) => {
 
 const getFir = async (req, res) => {
     try {
-        const FIRno = req.body
-        const myFir = await Fir.findOne({ FIRno: FIRno.FIRno })
+        const FIRno = req.query
+        const queryObject = {};
+        if(FIRno){
+            queryObject.FIRno = FIRno;
+        }
+        const myFir = await Fir.find( queryObject.FIRno )
         console.log(myFir)
         res.status(201).json(myFir)
     } catch (error) {
