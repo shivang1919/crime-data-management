@@ -42,7 +42,7 @@ const NavbarPolice = () => {
                         <button className="dropbtn">Missing Person Bureau</button>
                         <div className="dropdown-content">
                             <a href="/signin/police/login/missingpersonbureau">New Case</a>
-                            <a href="/">Past Case</a>
+                            <a href="/signin/police/searchmissing">Past Case</a>
                         </div>
                     </div>
 

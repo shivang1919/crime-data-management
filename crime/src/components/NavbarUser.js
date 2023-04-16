@@ -24,11 +24,11 @@ const NavbarUser = () => {
           <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447] mr-5">
             Report Crime
           </a>
-          <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
+          <a href="/signin/users/searchfir" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
             F.I.R.
           </a>
 
-          <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
+          <a href="/signin/users/searchmissing" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
             Missing Person Bureau
           </a>
 
