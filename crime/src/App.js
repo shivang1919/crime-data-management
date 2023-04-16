@@ -14,7 +14,7 @@ import Policepage from './components/policepage/Policepage';
 import Searchmissing from './components/searchmissing/Searchmissing';
 import Searchfir from './components/searchfirpage/Searchfir';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import Searchfirp from './components/policepastfir/Searchfirp';
 
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
           <Route path='/signin/users/searchmissing' element={<Searchmissing/>}/>
           <Route path='/signin/police/searchmissing' element={<Searchmissing/>}/>
           <Route path='/signin/users/searchfir' element={<Searchfir/>}/>
-  
+          <Route path='/signin/police/searchfirp' element={<Searchfirp/>}/>
         </Routes>
       </Router>
     </div>

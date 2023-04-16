@@ -29,7 +29,7 @@ const NavbarPolice = () => {
                         <button className="dropbtn">F.I.R.</button>
                         <div className="dropdown-content">
                             <a href="/signin/police/login/fir">New F.I.R.</a>
-                            <a href="/">Past F.I.R.</a>
+                            <a href="/signin/police/searchfirp">Past F.I.R.</a>
                         </div>
                     </div>
                     {/* <a href="/signin/police/login/fir" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
