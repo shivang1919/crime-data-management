@@ -120,6 +120,7 @@ export default function Firpage() {
     return (
         <div className='relative w-full h-full backdrop-blur-sm'>
             {/* <img className='absolute w-full h-full object-cover mix-blend-overlay' src="" alt="/" /> */}
+        
 
 
             <div className='flex flex-row justify-center items-center h-full '>

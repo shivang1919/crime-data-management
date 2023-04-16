@@ -21,9 +21,6 @@ const NavbarPolice = () => {
             <div className={`${isExpanded ? `block  togglebar` : `hidden absolute right-16`
                 } w-full block flex-grow lg:flex lg:items-center lg:w-auto `}>
                 <div className="text-lg font-semibold lg:flex-grow ">
-                    {/* <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447] mr-5">
-            Report Crime
-          </a> */}
 
                     <div className="dropdown mr-5">
                         <button className="dropbtn">F.I.R.</button>
@@ -32,24 +29,16 @@ const NavbarPolice = () => {
                             <a href="/">Past F.I.R.</a>
                         </div>
                     </div>
-                    {/* <a href="/signin/police/login/fir" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
-                        F.I.R.
-
-                    </a> */}
                     
 
                     <div className="dropdown mr-5">
                         <button className="dropbtn">Missing Person Bureau</button>
                         <div className="dropdown-content">
                             <a href="/signin/police/login/missingpersonbureau">New Case</a>
-                            <a href="/signin/police/searchmissing">Past Case</a>
+                            <a href="/signin/police/searchmissingpol">Past Case</a>
                         </div>
                     </div>
 
-
-                    {/* <a href="/missingpersonbureau" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
-                        Missing Person Bureau
-                    </a> */}
 
                     <a href="/" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">
                         Logout
