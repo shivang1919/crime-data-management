@@ -113,6 +113,10 @@ const FirSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
+        cadre: {
+            type: String,
+            required: true
+        },
         ReasonsforDelay: {
             type: String,
             // required: true,
