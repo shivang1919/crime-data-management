@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Table from "./Table";
+import NavbarUser from "../NavbarUser";
+
 
 const Searchfir = () => {
 
@@ -40,6 +42,7 @@ const Searchfir = () => {
             console.log(data[0]);
             setUsers(data[0])
         })
+
     }
 
     // useEffect(() => {
@@ -48,19 +51,17 @@ const Searchfir = () => {
 
 
     return (
-
-        <div className="relative w-full h-full backdrop-blur">
+        <>
+        
+        <div className="relative w-full h-screen backdrop-blur">
+        <NavbarUser/>
             <div className='flex justify-center items-center '>
                 <form className='max-w-[500px] w-full max-h-[500px] mx-auto bg-white p-8 mt-8 mb-8'>
-                    <h2 className='text-4xl font-bold text-center py-4'>Search Fir</h2>
+                    <h2 className='text-4xl font-bold text-center py-4'>Search F.I.R.</h2>
                     <div className='flex flex-col mb-4'>
                         <label>FIRno</label>
                         <input className='border relative bg-gray-100 p-2' placeholder='Enter FIR no.' type="text" onChange={adddata} value={pdata.FIRno} name="FIRno" />
                     </div>
-                    {/* <div className='flex flex-col mb-4'>
-                        <label>Value</label>
-                        <input className='border relative bg-gray-100 p-2' placeholder='Search by value' type="text" onChange={adddata} value={pdata.value} name="value" />
-                    </div> */}
                     <button className='w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white' onClick={ fetchUserData} >Search</button>
                 </form>
             </div>
@@ -84,6 +85,7 @@ const Searchfir = () => {
             )} */}
 
         </div>
+        </>
     );
 }
 

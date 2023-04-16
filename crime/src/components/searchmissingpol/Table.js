@@ -4,7 +4,7 @@ const Table = ({ data }) => {
       <div>
       <h1 className="text-white text-center text-3xl font-bold mt-10">MISSING PERSON DETAILS</h1>
       </div>
-      <table className="tablecenter bg-white ">
+      <table className="tablecenter bg-white">
        
      
         <tbody>

@@ -21,7 +21,7 @@ const NavbarUser = () => {
       <div className={`${isExpanded ? `block  togglebar` : `hidden absolute right-16`
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto `}>
         <div className="text-lg font-semibold lg:flex-grow ">
-          <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447] mr-5">
+          <a href="/signin/users/reportacrime" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447] mr-5">
             Report Crime
           </a>
           <a href="/signin/users/searchfir" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-[#0B2447]  mr-5">

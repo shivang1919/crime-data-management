@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Table from "./Table";
-import NavbarUser from "../NavbarUser";
+import NavbarPolice from "../NavbarPolice";
 
-const Searchmissing = () => {
+const Searchmissingpol = () => {
 
     const [pdata, sdata] = useState({
         property: "",
@@ -49,7 +49,7 @@ const Searchmissing = () => {
     return (
 
         <div className="relative w-full h-screen  backdrop-blur">
-        <NavbarUser/>
+        <NavbarPolice/>
             <div className='flex justify-center items-center '>
                 <form className='max-w-[600px] w-full max-h-[900px] mx-auto bg-white p-8 mt-8 mb-8'>
                     <h2 className='text-4xl font-bold text-center py-4'>Search Missing Person</h2>
@@ -87,4 +87,4 @@ const Searchmissing = () => {
     );
 }
 
-export default Searchmissing;
+export default Searchmissingpol;
