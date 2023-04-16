@@ -4,7 +4,6 @@ const Table = ({ data }) => {
     const [dataCadre, setDataCadre] = useState(data.cadre)
     console.log(data.cadre)
     console.log(data._id)
-    { console.log(dataCadre) }
     const changeCadre = async (e) => {
         fetch(`https://crime-data-management-api.vercel.app/api/police/updateCadre/${data._id}`,{
             method: 'PATCH',
@@ -22,7 +21,7 @@ const Table = ({ data }) => {
     return (
         <table className="tablecenter">
             <tbody className="center">
-                <h1 className="text-white text-2xl font-bold text-center">F.I.R. DETAILS</h1>
+                <h1 className="text-white text-3xl font-bold text-center mt-16">F.I.R. DETAILS</h1>
                 <div className="flex bg-white justify-center">
 
                     <tr>
