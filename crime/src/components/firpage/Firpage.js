@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NavbarPolice from '../NavbarPolice';
 // import Uploadimg from './Uploadimg';
 
 
@@ -120,6 +121,7 @@ export default function Firpage() {
     return (
         <div className='relative w-full h-full backdrop-blur-sm'>
             {/* <img className='absolute w-full h-full object-cover mix-blend-overlay' src="" alt="/" /> */}
+            <NavbarPolice/>
         
 
 
