@@ -65,7 +65,7 @@ const Searchfir = () => {
                 </form>
             </div>
             {
-                users.length !== 0 && <Table data={users} />
+                users?.length !== 0 && <Table data={users} />
             }
             {/* {users.length > 0 && (
                 <ul>

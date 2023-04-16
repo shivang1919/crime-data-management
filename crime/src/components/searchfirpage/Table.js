@@ -1,4 +1,9 @@
+import { useState } from "react";
+
 const Table = ({ data }) => {
+    const [dataCadre,setDataCadre]=useState(data.cadre)
+    {console.log(dataCadre)}
+    
     return (
         <table>
             <tbody>
@@ -79,7 +84,7 @@ const Table = ({ data }) => {
                         <td>{data.ComplainantPlaceOfIssue}</td>
                         <td>{data.ComplainantAddress}</td>
                         <td>{data.DetailsOfSuspected}</td>
-                        <td>{data.cadre}</td>
+                        <td><input value={dataCadre} onChange={(e)=>{setDataCadre(e.target.value)}}></input></td>
                         <td>{data.ReasonsforDelay}</td>
                         <td>{data.ParticularsOfPropertiesStolenInvolved}</td>
                         </div>

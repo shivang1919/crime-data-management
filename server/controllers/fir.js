@@ -54,11 +54,10 @@ const getFir = async (req, res) => {
     try {
         const FIRno = req.query
         const queryObject = {};
-        if(FIRno){
+        if (FIRno) {
             queryObject.FIRno = FIRno;
         }
-        const myFir = await Fir.find( queryObject.FIRno )
-        console.log(myFir)
+        const myFir = await Fir.find(queryObject.FIRno)
         res.status(201).json(myFir)
     } catch (error) {
         res.status(400).json(error)
@@ -66,7 +65,23 @@ const getFir = async (req, res) => {
 
 }
 
+const updateCadre=async(req,res)=>{
+    const{cadre}=req.body;
+    const id=req.params.id;
+    try {
+        const updatedData=await Fir.findByIdAndUpdate({_id:id},{
+            cadre:cadre
+        },{
+            new:true
+        })
+        res.status(201).json({status:true,message:"Successfully updated the cadre",updatedData})
+    } catch (error) {
+        console.log("Error occured in updating cadre")
+        res.status(500).json({message:"Error occured in updating cadre"})
+    }
+}
 
 
 
-module.exports = { registerFir, getFir }
+
+module.exports = { registerFir, getFir,updateCadre }

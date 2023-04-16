@@ -44,4 +44,18 @@ const getAllMissingPerson = async(req,res) => {
     const myMissingPerson = await Missingperson.find(queryObject)
     res.status(200).json({myMissingPerson})
 }
-module.exports = {registerMissingperson,getAllMissingPerson}
+
+const toggleFound = async(req,res)=>{
+    try{
+        const missingPerson = await Missingperson.findByIdAndUpdate(
+            req.params.id,
+            {found: !req.body.found},
+            {new:true}
+        )
+        res.status(200).json(missingPerson);
+    }
+    catch(error){
+        res.status(500).json({ message: err.message });
+    }
+}
+module.exports = {registerMissingperson,getAllMissingPerson,toggleFound}
