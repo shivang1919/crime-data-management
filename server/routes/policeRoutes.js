@@ -9,5 +9,5 @@ router.post('/registermissing',registerMissingperson)
 router.post('/registerfir',registerFir)
 router.get('/getmissing',getAllMissingPerson)
 router.put('/found/:id',toggleFound)
-router.patch('/updateCadre',updateCadre)
+router.patch('/updateCadre/:id',updateCadre)
 module.exports=router;

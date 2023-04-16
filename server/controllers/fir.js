@@ -67,7 +67,9 @@ const getFir = async (req, res) => {
 
 const updateCadre=async(req,res)=>{
     const{cadre}=req.body;
+    console.log(cadre)
     const id=req.params.id;
+    console.log(req.params.id)
     try {
         const updatedData=await Fir.findByIdAndUpdate({_id:id},{
             cadre:cadre
@@ -76,10 +78,32 @@ const updateCadre=async(req,res)=>{
         })
         res.status(201).json({status:true,message:"Successfully updated the cadre",updatedData})
     } catch (error) {
-        console.log("Error occured in updating cadre")
+        console.log("Error occured in updating cadre",error)
         res.status(500).json({message:"Error occured in updating cadre"})
     }
 }
+const getfirno = async(req,res)=>{
+    try {
+        const {State, District, PoliceStation, FIRno, Date, Acts, OccurenceDay, OccurenceDate, OccurenceTime, InformationReceivedDate, InformationReceivedDay, InformationReceivedTime, DiaryReferenceEntryNo, DiaryReferenceTime, DirectionAndDistancefromPS, BeatNo, Address, ComplainantName, ComplainantFatherorHusbandName, ComplainantDateOfBirth, ComplainantNationality, ComplainantOccupation, ComplainantPassportNo, ComplainantDateofIssue, ComplainantPlaceOfIssue, ComplainantAddress, DetailsOfSuspected, cadre, ReasonsforDelay, ParticularsOfPropertiesStolenInvolved} = req.query
+        const queryObject = {};
+        if(State){
+            queryObject.State = State;
+        }
+        if(District){
+            queryObject.District = District
+        }
+        if(PoliceStation){
+            queryObject.PoliceStation = PoliceStation
+        }    
+        if(OccurenceDate){
+            queryObject.OccurenceDate = OccurenceDate
+        }
+    } catch (error) {
+        
+    }
+    
+}
+
 
 
 

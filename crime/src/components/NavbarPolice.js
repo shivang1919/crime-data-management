@@ -26,7 +26,7 @@ const NavbarPolice = () => {
                         <button className="dropbtn">F.I.R.</button>
                         <div className="dropdown-content">
                             <a href="/signin/police/login/fir">New F.I.R.</a>
-                            <a href="/">Past F.I.R.</a>
+                            <a href="/signin/police/searchfirp">Past F.I.R.</a>
                         </div>
                     </div>
                     
