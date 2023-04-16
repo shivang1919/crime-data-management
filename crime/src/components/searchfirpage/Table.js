@@ -1,11 +1,15 @@
 const Table = ({ data }) => {
     return (
-        <table>
-            <tbody>
-                <div className="flex bg-white justify-center  ">
+        <table className="tablecenter">
+            <tbody className="center">
+            <h1 className="text-white text-2xl font-bold text-center">F.I.R. DETAILS</h1>
+                <div className="flex bg-white justify-center">
+                
                 <tr>
-                <div className="flex flex-row">
+                <div className="flex flex-row mr-20 mt-10 mb-10">
+
                 <div className="flex flex-col">
+                
                     <th>State</th>
                     <th>District</th>
                     <th>Police Station</th>
@@ -49,7 +53,7 @@ const Table = ({ data }) => {
           ))} */}
           
                 <tr key={data.id}>
-                <div className="flex-row">
+                <div className="flex-row mt-10 mb-10">
                 
                     <div className="flex flex-col">
                         <td>{data.State}</td>
@@ -94,3 +98,5 @@ const Table = ({ data }) => {
 };
 
 export default Table;
+
+
