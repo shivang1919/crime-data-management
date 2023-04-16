@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import NavbarPRMS from '../NavbarPRMS';
@@ -74,9 +74,9 @@ export default function Userlogin() {
                         <input className='border relative bg-gray-100 p-2' placeholder='OTP' type="text" onChange={adddata} value={logdata.otp} name="otp" />
                     </div>
                     <button className='w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white' onClick={senddata}>Verify</button>
-                    <NavLink to="/signin/users/login/verifyOtp">
+                    {/* <NavLink to="/signin/users/login/verifyOtp">
                     <button className='w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white'>Resend OTP</button>
-                    </NavLink>
+                    </NavLink> */}
                 </form>
             </div>
             <ToastContainer/>

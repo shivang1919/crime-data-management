@@ -83,9 +83,7 @@ const Table = ({ data }) => {
                         <td>{data.ComplainantPlaceOfIssue}</td>
                         <td>{data.ComplainantAddress}</td>
                         <td>{data.DetailsOfSuspected}</td>
-                        {/* <td>{data.cadre}</td> */}
-                        <td className=""><input className='border bg-gray-100 w-20 mr-2' type="text"  name="cadre" />
-                        <button className='w-20  bg-indigo-600 hover:bg-indigo-500 relative text-white' >Update</button></td>
+                        <td>{data.cadre}</td>
                         <td>{data.ReasonsforDelay}</td>
                         <td>{data.ParticularsOfPropertiesStolenInvolved}</td>
                         </div>
