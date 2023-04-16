@@ -49,7 +49,7 @@ const Searchfir = () => {
 
     return (
 
-        <div className="relative w-full h-full backdrop-blur">
+        <div className="relative w-full h-screen backdrop-blur">
             <div className='flex justify-center items-center '>
                 <form className='max-w-[500px] w-full max-h-[500px] mx-auto bg-white p-8 mt-8 mb-8'>
                     <h2 className='text-4xl font-bold text-center py-4'>Search Fir</h2>
