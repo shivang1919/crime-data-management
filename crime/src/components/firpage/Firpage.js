@@ -36,6 +36,7 @@ export default function Firpage() {
         ComplainantPlaceOfIssue: "",
         ComplainantAddress: "",
         DetailsOfSuspected: "",
+        cadre:"",
         ReasonsforDelay: "",
         ParticularsOfPropertiesStolenInvolved: "",
 
@@ -54,14 +55,14 @@ export default function Firpage() {
 
         e.preventDefault();
         console.log("I am here")
-        const {State, District, PoliceStation, FIRno, Date, Acts, OccurenceDay, OccurenceDate, OccurenceTime, InformationReceivedDate, InformationReceivedDay, InformationReceivedTime, DiaryReferenceEntryNo, DiaryReferenceTime, DirectionAndDistancefromPS, BeatNo, Address, ComplainantName, ComplainantFatherorHusbandName, ComplainantDateOfBirth, ComplainantNationality, ComplainantOccupation, ComplainantPassportNo, ComplainantDateofIssue, ComplainantPlaceOfIssue, ComplainantAddress, DetailsOfSuspected, ReasonsforDelay, ParticularsOfPropertiesStolenInvolved } = logdata;
+        const {State, District, PoliceStation, FIRno, Date, Acts, OccurenceDay, OccurenceDate, OccurenceTime, InformationReceivedDate, InformationReceivedDay, InformationReceivedTime, DiaryReferenceEntryNo, DiaryReferenceTime, DirectionAndDistancefromPS, BeatNo, Address, ComplainantName, ComplainantFatherorHusbandName, ComplainantDateOfBirth, ComplainantNationality, ComplainantOccupation, ComplainantPassportNo, ComplainantDateofIssue, ComplainantPlaceOfIssue, ComplainantAddress, DetailsOfSuspected, cadre, ReasonsforDelay, ParticularsOfPropertiesStolenInvolved } = logdata;
         const res = await fetch("https://crime-data-management-api.vercel.app/api/police/registerfir", {
             method: "POST",
             headers: {
                 "content-Type": "application/json",
             },
             body: JSON.stringify({
-                State, District, PoliceStation, FIRno, Date, Acts, OccurenceDay, OccurenceDate, OccurenceTime, InformationReceivedDate, InformationReceivedDay, InformationReceivedTime, DiaryReferenceEntryNo, DiaryReferenceTime, DirectionAndDistancefromPS, BeatNo, Address, ComplainantName, ComplainantFatherorHusbandName, ComplainantDateOfBirth, ComplainantNationality, ComplainantOccupation, ComplainantPassportNo, ComplainantDateofIssue, ComplainantPlaceOfIssue, ComplainantAddress, DetailsOfSuspected, ReasonsforDelay, ParticularsOfPropertiesStolenInvolved,
+                State, District, PoliceStation, FIRno, Date, Acts, OccurenceDay, OccurenceDate, OccurenceTime, InformationReceivedDate, InformationReceivedDay, InformationReceivedTime, DiaryReferenceEntryNo, DiaryReferenceTime, DirectionAndDistancefromPS, BeatNo, Address, ComplainantName, ComplainantFatherorHusbandName, ComplainantDateOfBirth, ComplainantNationality, ComplainantOccupation, ComplainantPassportNo, ComplainantDateofIssue, ComplainantPlaceOfIssue, ComplainantAddress, DetailsOfSuspected, cadre, ReasonsforDelay, ParticularsOfPropertiesStolenInvolved,
             })
         })
         const data = await res.json();
@@ -107,6 +108,7 @@ export default function Firpage() {
                 ComplainantPlaceOfIssue: "",
                 ComplainantAddress: "",
                 DetailsOfSuspected: "",
+                cadre:"",
                 ReasonsforDelay: "",
                 ParticularsOfPropertiesStolenInvolved: "",
             });
@@ -273,6 +275,11 @@ export default function Firpage() {
                             <div className='flex flex-col mb-2'>
                                 <label>ParticularsOfPropertiesStolenInvolved</label>
                                 <input className='border relative bg-gray-100 p-2' placeholder='ParticularsOfPropertiesStolenInvolved' type="text" onChange={adddata} value={logdata.ParticularsOfPropertiesStolenInvolved} name="ParticularsOfPropertiesStolenInvolved" />
+                            </div>
+
+                            <div className='flex flex-col mb-2'>
+                                <label>Cadre</label>
+                                <input className='border relative bg-gray-100 p-2' placeholder='Cadre' type="text" onChange={adddata} value={logdata.cadre} name="cadre" />
                             </div>
                         </div>
                     </div>

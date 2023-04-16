@@ -11,6 +11,8 @@ import Missingperson from './components/missingpersonpage/Missingperson';
 import Firpage from './components/firpage/Firpage';
 import Userpage from './components/userpage/Userpage';
 import Policepage from './components/policepage/Policepage';
+import Searchmissing from './components/searchmissing/Searchmissing';
+import Searchfir from './components/searchfirpage/Searchfir';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
@@ -33,6 +35,10 @@ function App() {
           <Route path='/signin/police/login/fir' element={<Firpage/>}/>
           <Route path='/signin/users/login/verifyOtp/userspage' element={<Userpage/>}/>
           <Route path='/signin/police/login/policepage' element={<Policepage/>}/>
+          <Route path='/signin/users/searchmissing' element={<Searchmissing/>}/>
+          <Route path='/signin/police/searchmissing' element={<Searchmissing/>}/>
+          <Route path='/signin/users/searchfir' element={<Searchfir/>}/>
+  
         </Routes>
       </Router>
     </div>

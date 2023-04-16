@@ -172,3 +172,51 @@ body {
   /* background-color: #3e8e41; */
   color: #0B2447;
 }
+
+
+
+/* .list {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.listItem {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #444;
+  font-weight: 300;
+} */
+
+table {
+  width: 500px;
+  margin: 25px 0px;
+  border-spacing: 15px;
+  color: white;
+  /* position: relative; */
+  /* text-align: center; */
+  
+}
+
+tr {
+  /* margin-bottom: 20px; */
+  text-align:left;
+  color: red;
+}
+
+th {
+  width: 250px;
+  /* text-align: center; */
+  font-size: 15px;
+  color: black;
+  font-weight:bolder;
+  /* margin-right: 50px; */
+
+}
+
+td {
+  width: 250px;
+  font-size: 15px;
+  /* text-align: center; */
+  /* margin-right: 5px; */
+}
