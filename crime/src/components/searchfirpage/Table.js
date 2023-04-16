@@ -1,13 +1,8 @@
-import { useState } from "react";
-
 const Table = ({ data }) => {
-    const [dataCadre,setDataCadre]=useState(data.cadre)
-    {console.log(dataCadre)}
-    
     return (
         <table className="tablecenter">
             <tbody className="center">
-            <h1 className="text-white text-2xl font-bold text-center">F.I.R. DETAILS</h1>
+            <h1 className="text-white text-3xl font-bold text-center mt-16">F.I.R. DETAILS</h1>
                 <div className="flex bg-white justify-center">
                 
                 <tr>
@@ -88,7 +83,7 @@ const Table = ({ data }) => {
                         <td>{data.ComplainantPlaceOfIssue}</td>
                         <td>{data.ComplainantAddress}</td>
                         <td>{data.DetailsOfSuspected}</td>
-                        <td><input value={dataCadre} onChange={(e)=>{setDataCadre(e.target.value)}}></input></td>
+                        <td>{data.cadre}</td>
                         <td>{data.ReasonsforDelay}</td>
                         <td>{data.ParticularsOfPropertiesStolenInvolved}</td>
                         </div>
@@ -103,5 +98,3 @@ const Table = ({ data }) => {
 };
 
 export default Table;
-
-
